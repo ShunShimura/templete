@@ -1,8 +1,39 @@
-%日本語用   
-\renewcommand{\kanjifamilydefault}{\gtdefault}% 既定をゴシック体に
+
+%usepackage
 \usepackage{amsmath,bm,amsfonts,ascmac,color,amssymb,tcolorbox,multicol,wasysym,subfigure,wrapfig,here,bm,ulem,mathtools,tcolorbox}
+
+%use群
 \usefonttheme{professionalfonts}
+
+%set群
 \setbeamertemplate{navigation symbols}{}%ナビゲーションシンボルを非表示に
 \setbeamertemplate{footline}[frame number]%フッターをページ数のみに
 \setbeamerfont{footline}{size=\scriptsize}%フッターのフォントサイズを本文と同じに
 \setbeamerfont{frametitle}{series=\bfseries}%フレームタイトルのフォントを太字に
+
+%renewcommand群
+\renewcommand{\kanjifamilydefault}{\gtdefault}% 既定をゴシック体に
+
+%newcommand群
+\newcommand{\myfigure}[2]{
+    \begin{figure}[h]
+        \includegraphics[scale=#1]{{#2}}
+    \end{figure}
+}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\blak}{\textcolor{black}}
+\newcommand{\redline}[1]{\textcolor{red}{\uline{\textcolor{black}{#1}}}}
+\newcommand{\mydef}{\overset{\textrm{def}}{$=$}}
+\newcommand{\myargmin}[1]{
+    \underset{#1}{\textrm{arg}\ \textrm{min}}
+}
+\newcommand{\myargmax}[1]{
+    \underset{#1}{\textrm{arg}\ \textrm{max}}
+}
+\newcommand{\mymin}[1]{
+    \underset{#1}{\textrm{min}}
+}
+\newcommand{\mymax}[1]{
+    \underset{#1}{\textrm{max}}
+}
