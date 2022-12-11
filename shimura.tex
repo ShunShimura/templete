@@ -1,0 +1,27 @@
+\documentclass[dvipdfmx, 10pt]{beamer}
+\usepackage{myslide}
+
+\title[]{PM MTG}
+    \author[]{Shun Shimura}
+    \date[]{\today}
+    \institute[]{Nagoya Graduate School of Engineering \\ Takeuchi Laboratory}
+    %[]に省略名
+
+    \begin{document}
+
+        \begin{frame}
+            \maketitle
+            \thispagestyle{empty}%ヘッダーフッターなし
+            \addtocounter{framenumber}{-1}%ページ数カウンタしない
+        \end{frame}
+
+        \begin{frame}{Outline}
+            \tableofcontents
+        \end{frame}
+        
+        \input{sec/sec1.tex}
+        \input{sec/sec2.tex}
+        \input{sec/sec3.tex}
+        \input{sec/sec4.tex}
+
+    \end{document}
